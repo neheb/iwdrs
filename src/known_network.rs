@@ -3,7 +3,7 @@ use zvariant::OwnedObjectPath;
 
 use crate::{iwd_interface::iwd_interface_impl, network::NetworkType};
 
-iwd_interface_impl!(KnownNetwork, "net.connman.iwd.KnownNetwork");
+iwd_interface_impl!(KnownNetwork, "net.connman.iwd.AccessPoint");
 
 impl KnownNetwork {
     pub async fn forget(&self) -> Result<()> {
